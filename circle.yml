@@ -11,4 +11,4 @@ deployment:
   snapshots:
     branch: master
     commands:
-      - mvn -s settings.xml deploy:deploy
+      - mvn -s settings.xml deploy
