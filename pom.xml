@@ -41,6 +41,12 @@
                     </archive>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <!-- Default git provider was not doing a git commit in release -->
+                <version>2.5.3</version>
+            </plugin>
         </plugins>
     </build>
 
