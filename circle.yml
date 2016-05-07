@@ -6,3 +6,9 @@ test:
   post:
     - mkdir -p $CIRCLE_TEST_REPORTS/junit/
     - cp target/surefire-reports/*.xml  $CIRCLE_TEST_REPORTS/junit/
+
+deployment:
+  snapshots:
+    branch: master
+    commands:
+      - mvn -s settings.xml deploy:deploy
