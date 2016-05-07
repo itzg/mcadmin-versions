@@ -5,6 +5,5 @@ machine:
 test:
   post:
     - mkdir -p $CIRCLE_TEST_REPORTS/junit/
-    - cp target/surefire-reports/.*xml  $CIRCLE_TEST_REPORTS/junit/
-    - mkdir $CIRCLE_ARTIFACTS
-    - cp target/*.jar $CIRCLE_ARTIFACTS
+    - cp */target/surefire-reports/.*xml  $CIRCLE_TEST_REPORTS/junit/
+    - cp */target/*.jar $CIRCLE_ARTIFACTS
