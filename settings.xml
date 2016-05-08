@@ -4,9 +4,9 @@
     <servers>
 
         <server>
-            <id>bintray-itzgeoff-artifacts</id>
-            <username>itzgeoff</username>
-            <password>${env.BINTRAY_PW}</password>
+            <id>bintray</id>
+            <username>${env.BINTRAY_USERNAME}</username>
+            <password>${env.BINTRAY_API_KEY}</password>
         </server>
 
     </servers>
