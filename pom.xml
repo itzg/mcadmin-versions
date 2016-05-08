@@ -4,7 +4,7 @@
 
     <groupId>me.itzg</groupId>
     <artifactId>mcadmin-versions</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
 
     <scm>
       <connection>scm:git:https://github.com/itzg/mcadmin-versions.git</connection>
@@ -40,7 +40,11 @@
                     </archive>
                 </configuration>
             </plugin>
-
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>2.8.2</version>
+            </plugin>
             <plugin>
                 <artifactId>maven-release-plugin</artifactId>
                 <!-- Default git provider was not doing a git commit in release -->
