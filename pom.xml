@@ -38,6 +38,7 @@
           <archive>
             <manifest>
               <mainClass>me.itzg.mcadmin.GetVersions</mainClass>
+              <addClasspath>true</addClasspath>
             </manifest>
           </archive>
         </configuration>

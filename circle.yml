@@ -16,5 +16,4 @@ deployment:
   snapshots:
     branch: master
     commands:
-      - ls -l build-support
       - build-support/handle-mvn-release.sh
